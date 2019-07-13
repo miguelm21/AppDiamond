@@ -1,0 +1,47 @@
+<ion-header class="navbar-edit">
+  <ion-toolbar>    
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-round-back"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Detalles del producto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="detalles">
+    <ion-slides class="slide" pager="true" [options]="slideProducts">
+      <ion-slide>
+        <img src="https://us.emedemujer.com/wp-content/uploads/sites/3/2017/07/plato-de-comida.jpg" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://i.ytimg.com/vi/pcHmJUkYdxQ/maxresdefault.jpg" alt="">
+      </ion-slide>
+      <ion-slide>
+        <img src="https://i.ytimg.com/vi/BrA6BZBGmIE/maxresdefault.jpg" alt="">
+      </ion-slide>
+    </ion-slides>
+    <div class="box-description">
+      <div class="form-group">
+        <h5>Nombre</h5>
+        <p>{{ this.plato?.data.nombrePlato }}</p>
+      </div>
+      <div class="form-group">
+        <h5>Descripción</h5>
+        <p>{{ this.plato?.data.descripcionPlato }}​</p>
+      </div>
+      <div class="form-group w-50">
+        <h5>Porción</h5>
+        <p>{{ this.plato?.data.porcionPlato }}</p>
+      </div>
+      <!-- <div class="form-group w-50">
+        <h5>Peso</h5>
+        <p>{{ this.plato?.data.TamañoPLato }}</p>
+      </div> -->
+      <div class="form-group">
+        <h5>Precio del plato</h5>
+        <p class="green">{{ this.plato?.data.PrecioPlato }} EUR</p>
+      </div>
+      <div class="form-group">
+        <button class="btn-buy">Comprar</button>
+      </div>
+    </div>
+</ion-content>

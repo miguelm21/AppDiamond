@@ -1,0 +1,43 @@
+.recargar{
+    .box{
+        padding: 15px 10px;
+        .text-description{
+            color: var(--gray);
+            font-size: 14px;
+            margin: 0;
+            text-align:center;
+        }
+        .first-item{
+            margin: 20px auto;
+            input{
+                color: var(--gray);
+                font-size: 14px;
+            }
+        }
+        .primary-text{
+            color: var(--primary);
+            font-size: 18px;
+            text-transform: none;
+            letter-spacing: 0;
+        }
+        ion-list{
+            ion-item{
+                .primary{
+                    --background: var(--primary);
+                }
+                ion-label{
+                    color: var(--gray);
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .btn-recargar{
+            --background: var(--primary);
+            width: 100%;
+            --border-radius: 0;
+            margin: 30px auto;
+            
+        }
+    }
+}

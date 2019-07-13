@@ -1,0 +1,50 @@
+<ion-header class="navbar-edit">
+  <ion-toolbar>
+    <ion-buttons slot="start">   
+      <button ion-button icon-only> 
+        <ion-icon name="arrow-round-back"></ion-icon> 
+      </button> 
+    </ion-buttons> 
+    <!-- <ion-buttons slot="start">
+      <ion-back-button text="" icon="arrow-round-back"></ion-back-button>
+    </ion-buttons> -->
+    <ion-title>Recargar saldo</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="recargar">
+  <div class="box">
+    <p class="text-description">Aquí podras recargar tu monedero para continuar disfrutando de la plataforma</p>
+    <ion-item class="first-item">
+        <ion-input placeholder="Agregar nueva"></ion-input>
+        <ion-button class="primary" slot="end">
+          <ion-icon name="add"></ion-icon>
+        </ion-button>
+      </ion-item>
+    <ion-list>
+      <ion-radio-group>
+        <ion-list-header>
+          <ion-label class="primary-text">Seleccione una cuenta</ion-label>
+        </ion-list-header>
+    
+        <ion-item>
+          <ion-label>0423-3321-4525-2124</ion-label>
+          <ion-radio slot="end" checked></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>0423-3321-4525-2124</ion-label>
+          <ion-radio slot="end"></ion-radio>
+        </ion-item>
+    
+        <ion-item>
+          <ion-label>0423-3321-4525-2124</ion-label>
+          <ion-radio slot="end"></ion-radio>
+        </ion-item>
+      </ion-radio-group>
+    </ion-list>
+    <ion-button class="btn-recargar">Recargar</ion-button>
+  </div>
+
+  
+</ion-content>

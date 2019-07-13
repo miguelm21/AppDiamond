@@ -1,0 +1,51 @@
+.detalles{
+    ion-slides{
+        ion-slide{
+            img{
+                max-height: 200px;
+                object-fit: contain;
+            }
+        } 
+    }
+    .swiper-pagination-bullet-active{
+        background: #fff !important;
+    }
+    .box-description{
+        padding: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        .form-group{
+            margin-bottom: 15px;
+            width: 100%;
+            h5{
+                font-size: 18px;
+                color: var(--gray);
+                font-weight: bold;
+                margin: 0 auto 5px;
+            }
+
+            p{
+                font-size: 14px;
+                color: var(--gray);
+                margin: 5px auto;
+            }
+
+            p.green{
+                color: green;
+            }
+        }
+
+        .form-group.w-50{
+            width: 50%;
+        }
+
+        .btn-buy{
+            background-color: var(--primary);
+            padding: 10px;
+            font-size: 16px;
+            color: #fff;
+            width: 100%;
+            border: none;
+        }
+    }
+}

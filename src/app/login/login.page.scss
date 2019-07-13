@@ -1,0 +1,42 @@
+
+.box-login{
+    height: 100vh;
+    position: relative;
+
+    .container-login{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+     /*    border-bottom: 4px solid var(--primary); */
+        width: 80%;
+        .logo{
+            margin-bottom: 50px;
+        }
+
+        /* login form */
+        ion-label{
+            color: var(--gray);
+            font-size: 14px;
+            input{
+                color: var(--gray);
+                font-size: 14px;
+            }
+        }
+        ion-item.item-has-focus{
+            ion-label{
+                color: var(--primary);
+            }
+        }
+           
+        .Init{
+            width: 100%;
+            background-color: var(--secondary);
+            padding: 12px;
+            width: 100%;
+            color: #fff;
+            margin: 20px auto;
+            font-size: 16px;
+        }
+    }
+}
